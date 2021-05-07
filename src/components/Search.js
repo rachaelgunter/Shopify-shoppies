@@ -1,16 +1,22 @@
 import React from 'react'
 
 
-function Search({searchTerm, setSearchTerm}) {
+function Search({searchTerm, setSearchTerm, omdbSearch}) {
 
 
-    function handleSearch(event){
-        setSearchTerm(event.target.value)
-    }
-    console.log(searchTerm)
+    function handleSearch(e) {
+        e.preventDefault()
+        console.log('searching....')
+        omdbSearch()
+    } 
+
     return (
         <div>
-            <input type="text" value={searchTerm} onChange={handleSearch}></input>
+            
+            <form onSubmit={handleSearch}>
+                <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)}></input>
+                <button type="submit">Search</button>
+            </form>
         </div>
     )
 }

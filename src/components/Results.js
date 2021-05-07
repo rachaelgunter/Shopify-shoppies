@@ -1,11 +1,22 @@
 import React from 'react'
 
-function Results({searchTerm, movieList, nominateMovie}) {
+function Results({searchTerm, movieList, nominateMovie, nomsList}) {
+
+    function isNommed(title) {
+        const nomArr = nomsList.filter(nom => nom.title === title)
+        if (nomArr[0]){
+            console.log('found nomination')
+          return true
+        } else return false
+    }
+
+
     const listItems = movieList.map((instance) =>
         <li>{instance.title} {instance.year} 
-        <button onClick={() => nominateMovie(instance.title, instance.year)}>nominate me!</button></li>
+        {isNommed(instance.title) ? null : <button onClick={() => nominateMovie(instance.title, instance.year)}>nominate me!</button>}</li>
     )
 
+  
     
     return (
         <div>
