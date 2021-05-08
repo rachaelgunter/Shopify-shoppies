@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import Results from './components/Results';
 import Nominations from './components/Nominations';
+import Banner from './components/Banner';
 import React, {useState} from 'react'
 
 
@@ -14,9 +15,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("")
   const [nomsList, setNomsList] = useState([])
   const [resultsList, setResultsList] = useState([])
-  // const movies = [{title: "Captain Marvel" , year: 2019},
-  //                   {title: "Black Widow" , year: 2021},
-  //                   {title: "Age of Ultron", year: 2015}]
+
 
 
   console.log('noms', nomsList)
@@ -54,10 +53,19 @@ function App() {
     })
   }
 
+  function checkNomLength() {
+    if (nomsList.length >= 5) {
+      return true
+    } else {
+      return false
+    }
+  }
+
 
   return (
     <div className="app-container">
       <Header />
+      {checkNomLength() ? <Banner />  : null}
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} omdbSearch={omdbSearch}/>
       <Results searchTerm={searchTerm} movieList={resultsList} nominateMovie={nominateMovie} nomsList={nomsList}/>
       <Nominations nomsList={nomsList} removeMovie={removeMovie}/>
