@@ -44,7 +44,7 @@ function App() {
   }
 
   function omdbSearch() {
-    fetch(`http://www.omdbapi.com/?t=${searchTerm}&apikey=d6be079`)
+    fetch(`https://www.omdbapi.com/?t=${searchTerm}&apikey=d6be079`)
     .then(r => r.json())
     .then(r => {
       console.log(r)
