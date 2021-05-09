@@ -70,9 +70,7 @@ body {
 .search-form {
   width: 60%;
   height: 40px;
-  margin: 0 auto;
   margin-top: 10px;
-  margin-left: 250px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
@@ -87,23 +85,3 @@ input, select, textarea {
   width: 100px;
 }
 
-  li {
-    margin: 0;
-    margin-bottom: 1em;
-    padding-left: 1.5em;
-    position: relative;
-    
-    &:after {
-      content: '';
-      height: .4em;
-      width: .4em;
-      background: #D2153A;
-      display: block;
-      position: absolute;
-      transform: rotate(45deg);
-      top: .25em;
-      left: 0;
-    }
-    
-  }
-  

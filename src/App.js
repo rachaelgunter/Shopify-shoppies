@@ -4,6 +4,7 @@ import Search from './components/Search';
 import Results from './components/Results';
 import Nominations from './components/Nominations';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import React, {useState} from 'react'
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       <div className="body-container">
       <Results searchTerm={searchTerm} movieList={resultsList} nominateMovie={nominateMovie} nomsList={nomsList}/>
       <Nominations nomsList={nomsList} removeMovie={removeMovie}/>
+      <Footer />
       </div>
     </div>
   );
