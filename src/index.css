@@ -55,10 +55,11 @@ body {
 }
 
 .header-pic {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .footer-pic {
+  width: 50%;
 
 }
 
