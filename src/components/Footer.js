@@ -3,7 +3,7 @@ import footer from '../footer.png';
 
 function Footer() {
     return (
-        <div>
+        <div className="footer-container">
             <img className="footer-pic" src={footer} alt="a rachael gunter app" />
         </div>
     )

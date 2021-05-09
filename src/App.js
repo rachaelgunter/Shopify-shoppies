@@ -61,8 +61,8 @@ function App() {
       <div className="body-container">
       <Results searchTerm={searchTerm} movieList={resultsList} nominateMovie={nominateMovie} nomsList={nomsList}/>
       <Nominations nomsList={nomsList} removeMovie={removeMovie}/>
+     </div>
       <Footer />
-      </div>
     </div>
   );
 }
