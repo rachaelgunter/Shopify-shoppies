@@ -87,13 +87,6 @@ input, select, textarea {
   width: 100px;
 }
 
-ul {
-  font-family: monospace;
-  font-size: 2em;
-  list-style: none;
-  margin: 2em;
-  padding: 0;
-  
   li {
     margin: 0;
     margin-bottom: 1em;
