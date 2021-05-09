@@ -59,7 +59,7 @@ body {
 }
 
 .footer-pic {
-  
+
 }
 
 .search-pic {
@@ -85,4 +85,33 @@ input, select, textarea {
 .search-button {
   font-size: 13pt;
   width: 100px;
+}
+
+ul {
+  font-family: monospace;
+  font-size: 2em;
+  list-style: none;
+  margin: 2em;
+  padding: 0;
+  
+  li {
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    position: relative;
+    
+    &:after {
+      content: '';
+      height: .4em;
+      width: .4em;
+      background: #D2153A;
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      top: .25em;
+      left: 0;
+    }
+    
+  }
+  
 }
