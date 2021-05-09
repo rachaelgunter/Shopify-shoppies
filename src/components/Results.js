@@ -19,8 +19,8 @@ function Results({searchTerm, movieList, nominateMovie, nomsList}) {
   
     
     return (
-        <div>
-            Results for "{searchTerm}"
+        <div className="results-container">
+            <h3>Showing results for: {searchTerm}</h3>
             <ul>{listItems}</ul>
         </div>
     )

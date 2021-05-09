@@ -8,7 +8,7 @@ function Nominations({nomsList, removeMovie}) {
         <button onClick={() => removeMovie(nom.title)}>remove</button>
         </li> )
     return (
-        <div>
+        <div className="nominations-container">
             <h3>Nominations</h3>
             <ul>{nominations}</ul>
         </div>

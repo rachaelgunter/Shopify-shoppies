@@ -1,21 +1,20 @@
 import React from 'react'
-
+import searchpic from '../searchpic.png';
 
 function Search({searchTerm, setSearchTerm, omdbSearch}) {
 
 
     function handleSearch(e) {
         e.preventDefault()
-        console.log('searching....')
         omdbSearch()
     } 
 
     return (
-        <div>
-            
-            <form onSubmit={handleSearch}>
+        <div className="search-container">
+            <img className="search-pic" src={searchpic} alt="search movies"/>
+            <form className="search-form" onSubmit={handleSearch}>
                 <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)}></input>
-                <button type="submit">Search</button>
+                <button className="search-button" type="submit">Search</button>
             </form>
         </div>
     )

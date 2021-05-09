@@ -6,19 +6,11 @@ import Nominations from './components/Nominations';
 import Banner from './components/Banner';
 import React, {useState} from 'react'
 
-
 function App() {
-
-  
 
   const [searchTerm, setSearchTerm] = useState("")
   const [nomsList, setNomsList] = useState([])
   const [resultsList, setResultsList] = useState([])
-
-
-
-  console.log('noms', nomsList)
-  console.log('results', resultsList)
 
 
   function nominateMovie(title, year){
@@ -47,7 +39,6 @@ function App() {
     fetch(`https://www.omdbapi.com/?t=${searchTerm}&apikey=d6be079`)
     .then(r => r.json())
     .then(r => {
-      console.log(r)
       addResult(r.Title, r.Year)
     })
   }
@@ -64,11 +55,12 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      {checkNomLength() ? <Banner />  : null}
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} omdbSearch={omdbSearch}/>
+      {checkNomLength() ? <Banner />  : null}
+      <div className="body-container">
       <Results searchTerm={searchTerm} movieList={resultsList} nominateMovie={nominateMovie} nomsList={nomsList}/>
       <Nominations nomsList={nomsList} removeMovie={removeMovie}/>
-
+      </div>
     </div>
   );
 }
