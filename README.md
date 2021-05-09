@@ -1,3 +1,5 @@
+#The Shopify Shoppies!
+
 # Shopify UX Developer Intern & Web Developer Intern Challenge - Fall 2021
 
 The Challenge
@@ -21,7 +23,7 @@ Display a banner when the user has 5 nominations.
 
 #The Shoppies
 
-![Shoppies](/shoppies.png)
+![Shoppies](./shoppies.png)
 
 An app to search for and nomiate movies!
 
