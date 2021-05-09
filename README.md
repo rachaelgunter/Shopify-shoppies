@@ -21,7 +21,7 @@ Display a banner when the user has 5 nominations.
 
 #The Shoppies
 
-!(/shopify-shoppies/src/shoppies.png)
+!(/src/shoppies.png)
 
 An app to search for and nomiate movies!
 
