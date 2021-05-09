@@ -1,4 +1,4 @@
-#The Shopify Shoppies!
+# The Shopify Shoppies!
 
 # Shopify UX Developer Intern & Web Developer Intern Challenge - Fall 2021
 
