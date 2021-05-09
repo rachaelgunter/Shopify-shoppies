@@ -17,9 +17,10 @@ body {
   border: 10px solid #EDB2D6;
   margin: 0 auto;
   margin-top: 10px;
-  display: grid;
+  width: 75%;
+  /* display: grid; */
   /* grid-template-columns: 50%; */
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .results-container {
@@ -30,9 +31,10 @@ body {
   border: 10px solid #EDB2D6;
   margin: 0 auto;
   margin-top: 10px;
-  display: grid;
+  width: 75%;
+  /* display: grid; */
   /* grid-template-columns: 50%; */
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .search-container {
@@ -59,7 +61,7 @@ body {
   margin: 0 auto;
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 30% 30%;
+  grid-template-columns: 40% 40%;
   grid-gap: 10px;
 }
 
